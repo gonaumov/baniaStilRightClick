@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Как да махмем забраната за десен бутон на сайта на БаняСтил?">
+    <meta name="author" content="Georgi Naumov">
+    <link rel="icon" href="favicon.ico">
+    <title>Как да махмем забраната за десен бутон на сайта на БаняСтил?</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-3.3.5-dist/css/jumbotron-narrow.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="index.html">Начало</a></li>
+            <li role="presentation"><a href="about.html">За мен</a></li>
+            <li role="presentation"><a href="contact.html">Контакт</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="jumbotron">
+        <p class="lead">Сайтът на <a href="http://baniastil.com/" target="_blank">Баня Стил</a>
+         е готин, но има едно неприятно ограничение. 
+        Това е скриптът, който блокира контекстното меню на мишката и не може 
+        да се копира. Изключително досадно е. Ако човек иска да сравни продукти, трябва да отваря сайта по 
+        10 пъти и да търси всеки по-отделно. Този малък сайт е направен със цел да покаже 
+        на потребителите как да заобиколят тази неприятна рестрикция. По-долу можете 
+        да прочетете как да стане това. Лесно е. Просто спазвайте описаните инструкций. 
+        Има и много по-добър метод - с използването на потребителски скрипт или директно 
+        с браузер плъгин, но с оглед на това, че почти никой няма да го ползва мисля
+        да не се ангажирам с разработката му. 
+        </p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <h4>Ако използвате Mozilla FireFox</h4>
+          <p>Отворете сайта.</p>
+		  <p>Копирайте скрипта, приложен по-долу:</p>
+		  <p>
+			  <b>
+				   <pre>
+		  jQuery(document).off("contextmenu cut copy");
+		           </pre>
+		      </b>
+		  </p>
+		  <p>Настиснете F12.</p>
+		  <p>Трябва да видите нещо подобно в долната част на екрана си</p>
+		  <p>
+			  <img class="responsible-image" src="images/fireFoxFirst.png" alt="fireFoxFirst.png">
+		  </p>
+		  <p>
+			  Пейстнете скрипта, както е показано по-долу и натиснете 
+			  Enter. Ако ви покаже предупреждение, че първо трябва да 
+			  напишете allow pasting просто го направете. 
+		  </p>
+		  <p>
+			  <img class="responsible-image" src="images/fireFoxSecond.png" alt="fireFoxSecond.png">
+		  </p>
+		  <p>
+			  Можете да копирате от сайта, колкото си искате. 
+		  </p>
+        </div>
+        <div class="col-lg-12">
+          <h4>Ако използвате Google Chrome</h4>
+          <p>Стъпките са почти същите, но просто конзолата ще изглежда по-друг начин.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p></p>
+      </footer>
+    </div> <!-- /container -->
+  </body>
+</html>
